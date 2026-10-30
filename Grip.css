@@ -1,0 +1,87 @@
+.botton{
+    display: inline-block;
+}
+
+.logo{
+    justify-self: center;
+}
+nav{
+    width: 100%;
+    display: grid;
+    grid-template-columns:1fr repeat(4,auto);
+    gap: 25px;
+    
+    
+}
+.principal{
+    display: grid;
+    width: 100%;
+    max-height: 900px;
+    text-align: left;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "texte-h1 bouton" "texte-p bouton";
+    align-items: center;
+    row-gap: 15px;
+    column-gap: 40px;
+    min-height: 300px;
+    padding:20px;
+}
+.principal h1 { 
+    grid-area: texte-h1;
+    font-size: 42px;
+    margin: 0;
+}
+.principal p { 
+    grid-area: texte-p;
+    font-size: 20px;
+    margin: 0;
+}
+.principal .bouton {
+    grid-area: bouton;
+    justify-self: end;
+    white-space: nowrap; 
+}
+.produits{
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    column-gap: 40px;
+    padding: 50px 8%;
+    align-items: stretch;
+
+}
+.produits h2{
+    display: grid;
+    height: 100%;
+    place-content: center;
+    background-color: #f5d9e3;
+    color:  #8e3a59;
+    border-radius: 12px;
+    font-size: 32px;
+    box-shadow: 0 4px 12px rgb(0 0 0 / 0.05);
+    margin:0;
+    padding: 20px;
+}
+.liste-produit{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    min-width: 260px;
+    gap: 25px;
+    size-adjust: auto;
+
+}
+article{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:;
+    align-items: center;
+    height: 300px;
+    
+    
+
+}
+article img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

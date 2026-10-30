@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+}
+figure{
+    width: 100%;
+}
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    
+
+}
+h1{
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+h2{
+    text-align: center;
+    margin-bottom: 40px;
+}
+h3{
+    margin: 0;
+}
+.info{
+    font-size: 20px;
+
+}
+.logo{
+    font-weight: bold;
+    font-size: 24px;
+}
+header{
+    padding: 20px 8% 20px 8%;
+    background-color: #8e3a59;
+    color: white;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.principal{
+    min-height: 350px;
+    text-align: center;
+    background-color: #f5d9e3;
+    padding: 10%;
+}
+.produits{
+    padding: 50px 8% 50px 8%;
+}
+article{
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #ccc;
+}
+.info{
+    padding: 20px;
+}
+span{
+    font-weight: bold;
+    font-size: 20px;
+    color: #8e3a59;
+}
+.bouton{
+    margin-top: 20px;
+    background-color: #8e3a59;
+    color: white;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 12px 25px 12px 25px;
+    text-decoration: none;
+    
+    
+}
+footer{
+    text-align: center;
+    padding: 25px;
+    background-color: #8e3a59;
+    color: white;
+}

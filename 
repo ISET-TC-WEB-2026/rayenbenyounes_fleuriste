@@ -1,0 +1,206 @@
+[33mcommit fda8965367c60a4c0de953f647af1749cf48b400[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: rayen_benyounes <rayenbenyounes333@gmail.com>
+Date:   Fri Oct 30 13:56:03 2026 +0100
+
+    rayenbenyounes_jardinfleur
+
+[1mdiff --git a/EnCours.png b/EnCours.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e265dc1[m
+Binary files /dev/null and b/EnCours.png differ
+[1mdiff --git "a/Enonc\303\251.pdf" "b/Enonc\303\251.pdf"[m
+[1mnew file mode 100644[m
+[1mindex 0000000..77ef8a1[m
+[1m--- /dev/null[m
+[1m+++ "b/Enonc\303\251.pdf"[m
+[36m@@ -0,0 +1,337 @@[m
+[32m+[m[32mAtelier Dév. Web1                                   Atelier Flex                               Mme Wafa Zouari[m
+[32m+[m
+[32m+[m[32mTP : Création d'une page Web « Jardin des Fleurs »[m
+[32m+[m
+[32m+[m[32m1. Objectif du TP[m
+[32m+[m
+[32m+[m[32mL'objectif de ce TP est de développer la structure HTML5 d'une page Web présentant une boutique de fleurs appelée «[m
+[32m+[m[32mJardin des Fleurs ».[m
+[32m+[m
+[32m+[m[32mLe travail porte principalement sur :[m
+[32m+[m[32m     • l'utilisation des balises sémantiques HTML5 ;[m
+[32m+[m[32m     • l'organisation du contenu à l'aide de balises adaptées ;[m
+[32m+[m[32m     • l'utilisation des attributs id, class;[m
+[32m+[m[32m     • la structuration des éléments pour faciliter leur mise en forme ultérieure avec CSS3.[m
+[32m+[m
+[32m+[m[32m2. Organisation des fichiers[m
+[32m+[m
+[32m+[m[32mCréer un dossier de projet nommé fleuriste selon l'organisation suivante :[m
+[32m+[m[32m     • Un fichier index.html contenant la page Web.[m
+[32m+[m[32m     • Un dossier css contenant les feuilles de style.[m
+[32m+[m[32m     • Un dossier bouquets contenant les images des bouquets et une icône pour le site.[m
+[32m+[m
+[32m+[m[32mPartie B — Création de l'en-tête[m
+[32m+[m
+[32m+[m[32mL'en-tête doit contenir deux éléments : le nom de la boutique et un menu de navigation.[m
+[32m+[m
+[32m+[m[32m1. Nom de la boutique[m
+[32m+[m[32m     • Utiliser une balise sémantique HTML5 adaptée pour représenter l'en-tête de la page.[m
+[32m+[m[32m     • À l'intérieur de cet en-tête, créer un bloc portant la classe logo.[m
+[32m+[m[32m     • Ce bloc doit afficher une fleur décorative suivie du texte « Jardin des Fleurs ».[m
+[32m+[m
+[32m+[m[32m    La petite fleur est un « emojj » → Sous Windows, appuyez sur Windows + . (point).[m
+[32m+[m
+[32m+[m[32m      Recherchez « fleur » dans le panneau des emojis, puis sélectionnez .[m
+[32m+[m
+[32m+[m[32m2. Menu de navigation[m
+[32m+[m[32m     • Utiliser la balise HTML5 prévue pour regrouper les liens de navigation.[m
+[32m+[m[32m     • Ajouter cinq liens dans l'ordre suivant :[m
+[32m+[m[32m                o Accueil[m
+[32m+[m[32m                o Bouquets[m
+[32m+[m[32m                o Mariage[m
+[32m+[m[32m                o Occasions[m
+[32m+[m[32m                o Contact[m
+[32m+[m[32m     • Pour chaque lien, utiliser la balise appropriée et définir l'attribut href avec la valeur « # ».[m
+[32m+[m[32m     • Attribuer à l'en-tête la classe « entete ».[m
+[32m+[m
+[32m+[m[32mPartie C — Zone de présentation[m
+[32m+[m
+[32m+[m[32mSous l'en-tête, créer la zone principale de la page.[m
+[32m+[m[32m      1. À l'intérieur de ce contenu, créer une section portant la classe « principal ».[m
+[32m+[m[32m      2. Dans cette section, ajouter un bloc contenant[m
+[32m+[m[32m                o Un titre de niveau 1 : « Des fleurs pour chaque émotion ».[m
+[32m+[m[32m                o Un paragraphe : « Découvrez nos bouquets préparés avec soin pour toutes les occasions. »[m
+[32m+[m[32m                o Un lien affichant « Découvrir nos bouquets ».[m
+[32m+[m
+[32m+[m[32mRemarque : le lien doit permettre d'accéder directement à la section présentant les bouquets.[m
+[32m+[m[32m                                                                                    1[m
+[32m+[m[32mAtelier Dév. Web1                          Atelier Flex           Mme Wafa Zouari[m
+[32m+[m
+[32m+[m[32mPartie D — Présentation du catalogue de bouquets[m
+[32m+[m[32mDans le contenu principal, après la zone de présentation, créer une deuxième section destinée à afficher les[m
+[32m+[m[32mbouquets disponibles.[m
+[32m+[m
+[32m+[m[32m1. Création de la section[m
+[32m+[m[32m     • Attribuer à cette section l'identifiant bouquets.[m
+[32m+[m
+[32m+[m[32m     • Lui attribuer également la classe « produits ».[m
+[32m+[m[32m     • Ajouter un titre de niveau 2 contenant le texte « Nos bouquets ».[m
+[32m+[m
+[32m+[m[32m     • Créer ensuite un bloc portant la classe liste-produits. Ce bloc regroupera toutes les fiches des bouquets.[m
+[32m+[m[32m2. Création des fiches produits[m
+[32m+[m[32mChaque bouquet doit être présenté dans un élément indépendant <article>.[m
+[32m+[m[32mPour chaque fiche, respecter la structure suivante :[m
+[32m+[m
+[32m+[m[32m     • Une balise de regroupement adaptée aux contenus illustrés, portant[m
+[32m+[m[32m            une image du bouquet.[m
+[32m+[m
+[32m+[m[32m     • Un bloc portant la classe info, contenant les informations relatives[m
+[32m+[m[32m            au bouquet.[m
+[32m+[m
+[32m+[m[32m     • Un titre de niveau 3 indiquant le nom du bouquet.[m
+[32m+[m[32m     • Un paragraphe présentant sa composition.[m
+[32m+[m
+[32m+[m[32m     • Le prix dans une balise <span>.[m
+[32m+[m[32m     • Le texte « Commander » dans une balise <span> avec une classe[m
+[32m+[m
+[32m+[m[32m            « bouton ».[m
+[32m+[m[32mCompléter les six fiches à partir du tableau suivant.[m
+[32m+[m
+[32m+[m[32mN° Nom du          Image                   Texte alternatif de    Composition               Prix[m
+[32m+[m[32m      bouquet                              l'image[m
+[32m+[m[32m                   bouquets/orange.jpg                            Roses jaunes et de lys    45 DT[m
+[32m+[m[32m1 Bouquet Jaune    bouquets/printemps.jpg  Bouquet de roses       orange                    38 DT[m
+[32m+[m[32m      & orange     bouquets/douceur.jpg    rouges                 Tulipes, roses et fleurs  42 DT[m
+[32m+[m[32m                   bouquets/soleil.jpg     Bouquet de printemps   sauvages.                 35 DT[m
+[32m+[m[32m2 Bouquet          Bouquets/elegance.jpg                          Roses roses et            55 DT[m
+[32m+[m[32m      Printemps    bouquets/champetre.jpg  Bouquet de fleurs      gypsophile.               40 DT[m
+[32m+[m[32m                                           roses                  Tournesols et fleurs[m
+[32m+[m[32m3 Bouquet                                  Bouquet de tournesols  jaunes.[m
+[32m+[m[32m      Douceur                                                     Orchidées et roses[m
+[32m+[m[32m                                           Bouquet d'orchidées    blanches.[m
+[32m+[m[32m4 Bouquet Soleil                                                  Mélange de fleurs de[m
+[32m+[m[32m                                           Bouquet champêtre      saison.[m
+[32m+[m[32m5 Bouquet[m
+[32m+[m[32m      Élégance[m
+[32m+[m
+[32m+[m[32m6 Bouquet[m
+[32m+[m[32m      Champêtre[m
+[32m+[m
+[32m+[m[32mConsignes importantes :[m
+[32m+[m
+[32m+[m[32m     • Les six fiches doivent respecter la même structure HTML.[m
+[32m+[m
+[32m+[m[32m     • Chaque fiche doit être un élément indépendant.[m
+[32m+[m
+[32m+[m[32m     • Les images doivent être insérées avec la balise HTML appropriée et posséder un attribut alt.[m
+[32m+[m
+[32m+[m[32m     • Les noms des bouquets doivent être des titres de niveau 3.[m
+[32m+[m
+[32m+[m[32m     • Les prix doivent être distingués du reste du texte.[m
+[32m+[m
+[32m+[m[32m     • Les éléments affichants « Commander » doivent tous porter la classe bouton.[m
+[32m+[m[32mCréation du pied de page[m
+[32m+[m[32mÀ la fin du document, après le contenu principal et les éléments indépendants, créer un pied de page à l'aide de la[m
+[32m+[m[32mbalise sémantique HTML5 appropriée.[m
+[32m+[m[32mIl doit contenir un paragraphe affichant :[m
+[32m+[m[32m© 2026 Jardin des Fleurs — Tous droits réservés[m
+[32m+[m
+[32m+[m[32m                                           2[m
+[32m+[m[32mAtelier Dév. Web1  Atelier Flex  Mme Wafa Zouari[m
+[32m+[m
+[32m+[m[32m                                  Mise en page et Design du site "Jardin des Fleurs"[m
+[32m+[m
+[32m+[m[32mRédigez le fichier de style css/base.css en suivant les consignes de mise en forme détaillées ci-dessous, section par[m
+[32m+[m[32msection.[m
+[32m+[m
+[32m+[m[32m     • Utilisez le modèle de boîte « border-box » pour tous les éléments.[m
+[32m+[m[32m     • Toutes les images contenues de la balise « figure » ont une largeur (100%).[m
+[32m+[m
+[32m+[m[32m     • Corps de la page (body) :[m
+[32m+[m[32m                o Supprimez les marges par défaut (margin: 0).[m
+[32m+[m[32m                o Définissez la police de caractères principale à Arial, sans-serif.[m
+[32m+[m[32m                o Appliquez une couleur de fond douce : #fff8fb.[m
+[32m+[m[32m                o Définissez la couleur principale du texte à #333.[m
+[32m+[m
+[32m+[m[32mTypographie et Titres[m
+[32m+[m
+[32m+[m[32m     • h1 : taille de la police à 42px et une marge inférieure de 15px.[m
+[32m+[m[32m     • h2 : Centrez le texte horizontalement et ajoutez une marge inférieure de 40px.[m
+[32m+[m[32m     • h3 : Supprimez toutes les marges par défaut (margin: 0).[m
+[32m+[m
+[32m+[m[32m     • Pour les paragraphes de la division « info »: Taille de la police 20px.[m
+[32m+[m[32m     • Logo (.logo) : Appliquez une taille de police de 24px avec un style de texte en gras (font-weight: bold).[m
+[32m+[m[32mL'en-tête principal :[m
+[32m+[m
+[32m+[m[32m                o Espacement interne de 20px en haut/bas et 8% sur les côtés.[m
+[32m+[m[32m                o Couleur d'arrière-plan bordeaux/violet : #8e3a59 et une couleur de texte blanche.[m
+[32m+[m[32mLiens de navigation : Couleur du texte en blanc et supprimez le soulignement par défaut (text-decoration).[m
+[32m+[m[32mSection « principal »:[m
+[32m+[m[32m                o Fixez une hauteur minimale (min-height) de 350px.[m
+[32m+[m[32m                o Centrez le texte horizontalement.[m
+[32m+[m[32m                o Appliquez une couleur d'arrière-plan rose pastel : #f5d9e3.[m
+[32m+[m[32m                o Espacement interne :10%[m
+[32m+[m[32mGrille des produits et Cartes (.produits, article, .info)[m
+[32m+[m[32m     • Section des produits: Appliquez un espacement interne de 50px en haut/bas et 8% sur les côtés.[m
+[32m+[m[32m     • Carte produit (article) :[m
+[32m+[m[32m                o Fixez une largeur de 300px.[m
+[32m+[m[32m                o Définissez un arrière-plan blanc.[m
+[32m+[m[32m                o Arrondissez les angles avec un rayon de 10px.[m
+[32m+[m[32m                o Ajoutez une ombre portée douce (box-shadow: 0 3px 10px #ccc).[m
+[32m+[m[32m     • Zone d'information produit (.info) : Appliquez un espacement interne uniforme de 20px.[m
+[32m+[m[32m     • Prix / Éléments textuels isolés (span) :[m
+[32m+[m[32m                o Mettez le texte en gras (font-weight: bold).[m
+[32m+[m[32m                o Définissez la taille de la police à 20px.[m
+[32m+[m[32m                o Appliquez la couleur thématique #8e3a59.[m
+[32m+[m[32mLe lien « Découvrir nos bouquets » et Les boutons « Commander »:[m
+[32m+[m[32m                o Marge supérieure de 20px.[m
+[32m+[m[32m                o Couleur d’arrière-plan à#8e3a59 avec un texte blanc.[m
+[32m+[m[32m                o Taille de police à 14px, les coins arrondis à 6px, et curseur de la souris en main (pointer).[m
+[32m+[m[32m                o Espacement interne 12px (haut/bas) et 25px (gauche/droite).[m
+[32m+[m[32m                o Supprimez le soulignement du lien.[m
+[32m+[m[32mPied de page (footer)[m
+[32m+[m[32m     • Texte centré Centrez.[m
+[32m+[m
+[32m+[m[32m     • Appliquez un espacement interne de 25px.[m
+[32m+[m[32m     • Couleur d'arrière-plan #8e3a59 et un texte de couleur blanche.[m
+[32m+[m
+[32m+[m[32m                   3[m
+[32m+[m[32mAtelier Dév. Web1  Atelier Flex  Mme Wafa Zouari[m
+[

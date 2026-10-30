@@ -1,0 +1,23 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav a{
+    margin-left: 25px;
+    
+}
+span{
+    display: flex;
+    flex-direction: column;
+}
+.produits{
+    
+    flex-direction: row;
+    justify-content: space-between;
+}
+article{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
